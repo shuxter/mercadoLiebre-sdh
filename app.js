@@ -1,11 +1,18 @@
 const express = require("express");
-const path = require("path");
-
 const app = express();
-app.use(express.static("public"));
 
-let port = 3030;
+const path = require("path");
+const PORT = 3030;
 
-app.listen(3030, () => {
-	console.log(`The server is running on ${port}`);
+//Middleware
+const staticFolder = path.resolve(__dirname, "./public");
+app.use(express.static(staticFolder));
+
+//Routes
+app.listen(PORT, () => {
+	console.log(`The server is running on ${PORT}`);
+});
+
+app.get("/home", (req, res) => {
+	res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });

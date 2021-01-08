@@ -1,0 +1,30 @@
+/*ToDo:
+Add Bold to class=product description inside li 
+Scale Images to fit screen size!
+*/
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	position: relative;
+	min-height: 100vh;
+	background-color: lightgrey;
+}
+.mainHeader {
+	background-color: yellow;
+}
+footer {
+	/* position: absolute;
+	bottom: 0; */
+	text-align: center;
+}
+
+img {
+	width: 90%;
+	position: relative;
+}
+
+header > div > img {
+	width: 100%;
+}
