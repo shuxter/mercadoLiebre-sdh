@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="/css/style.css">
+
+        <title>
+            <h1>Mercado Liebre</h1>
+        </title>
+    </head>
+
+    <body>
+        <header>
+            <div class="main-header">
+                <div class="main-header-bar">
+                    <div class="main-header-bar-left">
+                        <a class="logo-header" href="/"><img class="logo" src="/img/logo-mercado-liebre.svg"
+                                alt="logo de mercado liebre"></a>
+                        <form class="nav-search-bar" action="" method="POST">
+                            <input type="search" class="search-bar" placeholder=" Buscar productos, marcas y más">
+                            <button type="submit" class='search-button'><i
+                                    class="fas fa-search icon-search light-grey"></i></button>
+                        </form>
+                    </div>
+                    <h2 class="byline text-align-center"><i class="fas fa-hand-holding-usd"></i> Comprá en Cuotas sin
+                        tarjeta de crédito</h2>
+                </div>
+                <nav class="nav-bar">
+                    <div class="nav-list-container-left">
+                        <ul class="nav-list nav-list-left">
+                            <li class="nav-item"><a class="dark-grey" href="#">Ofertas</a></li>
+                            <li class="nav-item"><a class="dark-grey" href="#">Tiendas oficiales</a></li>
+                            <li class="nav-item"><a class="dark-grey" href="#">Vender</a></li>
+                            <li class="nav-item"><a class="dark-grey" href="#">Ayuda</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-list-container-right">
+                        <ul class="nav-list nav-list-right">
+                            <li class="nav-item"><a class="dark-grey" href="/register">Creá tu cuenta
+                                </a><i class="fas fa-id-card"></i>
+                            </li>
+                            <li class="nav-item"><a class="dark-grey" href="/login">Ingresá </a><i
+                                    class="fas fa-sign-in-alt"></i>
+                            </li>
+                            <li class="nav-item"><a class="dark-grey" href="#">Mis compras </a><i
+                                    class="fas fa-shopping-basket"></i></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="menu-btn-box text-align-center m-l-hidden">
+                    <button class="burger-menu btn-primary">
+                        <i class="fa fa-bars burger"></i>
+                    </button>
+                </div>
+        </header>
+        <section class="banner" ;>
+            <img class="img-banner h100" src="/img/img-home-banner.jpg" alt="">
+        </section>
+        <main>
+            <div class="form-body">
+                <form class="register-form" id="register-form" action=" /" method="GET">
+                    <div class="image-container">
+                        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.nk0tPnwx-5-jZsiYe9LQigHaHa%26pid%3DApi&f=1
+                        " alt="login Avatar" class="user-image">
+                    </div>
+
+                    <!-- IF the field validations fail then i want to highlight the field in red and give an explanation as to why it has failed next to the field or in a popup when i click on the field.-->
+                    <div class="form-container">
+                        <div class="form-item">
+                            <label for="nameAndSurname"><input type="text" name="nombreYApellido" id="name"
+                                    placeholder="Nombre y Apellido"></label>
+                        </div>
+                        <div class="form-item">
+                            <label for="username"><input type="text" name="usuario" id="username"
+                                    placeholder="Nombre de Usuario"></label>
+                        </div>
+                        <div class="form-item">
+                            <label for="email"><input type="email" name="email" id="user-email"
+                                    placeholder="E-mail"></label>
+                        </div>
+                        <div class="form-item" id="date-of-birth">
+                            <h4>Fecha de Nacimiento</h4>
+                            <input type="date" name="DOB" id="dateOfBirth" placeholder="mm/dd/yyy">
+                        </div>
+                        <div class="form-item">
+                            <label for="address"><input type="text" name="address" id="user-address"
+                                    placeholder="Domicilio"></label>
+                        </div>
+                        <div class="form-item" id="user-profile">
+                            <h4>Perfil del usuario</h4>
+
+                            <input type="radio" name="userProfile" id="comprador" value="comprador">
+                            <label for="comprador">Comprador</label>
+
+                            <input type="radio" name="userProfile" id="vendedor" value="vendedor">
+                            <label for="vendedor">Vendedor</label>
+
+                        </div>
+                        <div class="form-item" id="user-interests">
+                            <h4>Intereses</h4>
+                            <p>
+                                <label for="electro"></label><input type="checkbox" id="electro" name="electro"
+                                    value="Electro">
+                                Electro</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="moda" name="moda" value="moda">
+                                <label for="moda">Moda</label>
+                            </p>
+                            <p> <input type="checkbox" id="hogar" name="hogar" value="hogar">
+                                <label for="hogar">Hogar</label>
+                            </p>
+                            <p><input type="checkbox" id="jugueteria" name="jugueteria" value="jugueteria">
+                                <label for="jugueteria">Jugueteria</label>
+                            </p>
+                            <p><input type="checkbox" id="vidaSana" name="vidaSana" value="vidaSana">
+                                <label for="vidaSana">Vida sana</label>
+                            </p>
+                        </div>
+                        <div class="form-item" id="user-photo-container">
+                            <h4>Foto de Perfil</h4>
+                            <label for="user-photo">Subir una foto para tu perfil</label>
+                            <input type="file" name="user-photo" id="user-photo">
+                        </div>
+                        <div class="form-item">
+                            <input type="password" name="password" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="form-item">
+                            <input type="password" name="confirmPassword" id="confirmPassword"
+                                placeholder="Confirmar Contraseña">
+                        </div>
+                    </div>
+                    <div class="btn-group-register">
+                        <button type="reset" class="btn-secondary-register">Resetear</button>
+                        <button type="submit" class="btn-primary-register">Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="text-align-center">
+            <div class="footer-container">
+                <div class="footer-item"><i class="fas fa-credit-card icon-footer"></i>
+                    <h4 class="footer-sub-heading">Pagá con tarjeta o en efectivo</h4>
+                    <p class=" footer-description">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+                        efectivo
+                        en puntos de pago. ¡Y
+                        siempre es seguro!</p>
+                </div>
+                <div class="footer-item"><i class="fas fa-gift icon-footer"></i>
+                    <h4 class="footer-sub-heading">Envió gratis desde $ 2.500</h4>
+                    <p class="footer-description">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+                        miles
+                        de productos. Es un
+                        beneficio de Mercado Puntos.</p>
+                </div>
+                <div class="footer-item"><i class="fas fa-user-shield icon-footer"></i>
+                    <h4 class="footer-sub-heading">Seguridad, de principio a fin</h4>
+                    <p class="footer-description">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
+                        hacer, porque estás siempre
+                        protegid@.</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+            </div>
+        </footer>
+    </body>
+
+</html>

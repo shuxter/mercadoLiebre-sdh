@@ -1,13 +1,15 @@
-/*ToDo:
-Add Bold to class=product description inside li 
-Scale Images to fit screen size!
+/* 
+Separar los css en distintos archivos y reordenarlos
+asi quedan mejor.
 */
+
 /* Paleta  de  colores 
  */
 :root {
 	--main-yellow: #eac926;
 	--dark-blue: #03264c;
-	--light-blue: #1259c3;
+	--light-blue: #3483fa;
+	--light-blue-consigna: #1259c3;
 	--dark-grey: #666;
 	--light-grey: #ebebeb;
 	--green: #39b54a;
@@ -30,9 +32,14 @@ body {
 main {
 	margin-right: auto;
 	margin-left: auto;
+	height: auto;
 	width: 90%;
 }
 footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	background-color: white;
 	padding: 10px;
 }
@@ -109,8 +116,10 @@ p {
 .search-bar {
 	width: 100%;
 	font-size: 20px;
+	padding: 5px 0px;
 	border-radius: 5px;
 	border: none;
+	text-overflow: ellipsis;
 }
 .search-button {
 	border: none;
@@ -182,6 +191,7 @@ p {
 article {
 	width: 100%;
 }
+
 .card-description {
 	border-top: solid 1px var(--light-grey);
 	position: relative;
@@ -208,6 +218,7 @@ article {
 	position: absolute;
 	top: -15px;
 	right: 25px;
+	transition: transform 5s;
 }
 .fa-truck {
 	color: var(--green);
@@ -223,7 +234,7 @@ article {
 	font-weight: 300;
 	font-size: 16px;
 	flex-grow: 1;
-	padding-left: 2px;
+	padding-left: 10px;
 }
 .productDescription {
 	color: var(--dark-grey);
@@ -234,29 +245,35 @@ article {
 
 /*---------- Footer------------ */
 .footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	margin-top: 15px;
 	margin-bottom: 30px;
 }
+.footer-item {
+	width: 100%;
+}
+
 .icon-footer {
 	color: var(--dark-blue);
 	margin-bottom: 5px;
 	font-size: 3em;
 }
-
 .footer-sub-heading {
 	color: var(--dark-grey);
-	width: 75vw;
 	margin: auto;
 }
 
 .footer-description {
 	color: var(--dark-grey);
-	width: 75vw;
 	margin: auto;
 	margin-bottom: 30px;
 }
 
 .footer-copyright {
+	width: 100%;
 	text-align: left;
 	color: var(--dark-grey);
 }
@@ -266,9 +283,108 @@ article {
 .m-l-hidden {
 	display: flex;
 }
+
+/* Register */
+.form-body {
+	display: flex;
+	justify-content: center;
+}
+
+.form-item {
+	margin: 10px 0px;
+	width: 100%;
+}
+.form-item input {
+	border: none;
+	border-radius: 5px;
+	padding: 3px 5px;
+	color: var(--dark-grey);
+}
+#name,
+#dateOfBirth,
+#username,
+#user-email,
+#user-address {
+	width: 100%;
+	display: block;
+}
+
+.btn-group-register {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+.btn-primary-register {
+	background-color: var(--light-blue);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+.btn-secondary-register {
+	background-color: var(--dark-grey);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+/* Login */
+.form-login,
+.register-form {
+	background-color: white;
+	margin-bottom: 15px;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="email"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 5px 0;
+	background-color: white;
+	border: solid 1px var(--light-blue);
+	border-radius: 5px;
+}
+.btn-login,
+.btn-cancel {
+	background-color: var(--light-blue);
+	color: white;
+	padding: 15px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+}
+button:hover {
+	opacity: 0.8;
+	background-color: #0022aa;
+}
+.btn-cancel {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+}
+.image-container {
+	text-align: center;
+	margin-top: 24px;
+}
+.user-image {
+	width: 40%;
+	border-radius: 50%;
+}
+.form-container {
+	padding: 16px;
+	max-width: 500px;
+}
+span.psw {
+	float: right;
+	padding-top: 16px;
+}
+
 /* <---------MEDIA QUERIES---------> */
 /* Iintermediate for TABlETS to acocmodate the top bar distribution better */
 @media (min-width: 769px) {
+	/* Header */
 	.main-header-bar {
 		display: flex;
 		justify-content: space-between;
@@ -283,6 +399,7 @@ article {
 		flex-grow: 1;
 	}
 	.nav-search-bar {
+		padding: 20px 0px;
 		padding-right: 20px;
 		padding-left: 5px;
 		align-items: center;
@@ -290,7 +407,6 @@ article {
 	.search-bar,
 	.icon-search {
 		font-size: 14px;
-		padding: 3px 0px;
 	}
 	.byline {
 		max-width: 300px;
@@ -302,6 +418,7 @@ article {
 		flex-wrap: nowrap;
 		padding: 0px;
 		margin: auto;
+		font-size: 16px;
 	}
 	.nav-list-container-left,
 	.nav-list-container-right {
@@ -322,18 +439,28 @@ article {
 		justify-content: flex-end;
 	}
 	.nav-item {
-		margin: 0px 3px;
+		margin-left: 5px;
+	}
+	.nav-item > a {
+		margin: 0px 0px;
+		margin-left: 5px;
+		font-size: 16px;
 	}
 	.m-l-hidden {
 		display: none;
 	}
+	/* Product */
 	article {
-		box-shadow: 0px 0px 10px rgb(100, 100, 100);
 		width: 45%;
+	}
+	/* Register */
+	.register-form {
+		max-width: 350px;
 	}
 }
 
 @media (min-width: 1200px) {
+	/* Header */
 	.main-header {
 		padding: 20px;
 	}
@@ -346,7 +473,6 @@ article {
 	.search-bar,
 	.icon-search {
 		font-size: 16px;
-		padding: 5px 0px;
 	}
 	.nav-bar {
 		margin-top: 20px;
@@ -362,7 +488,34 @@ article {
 		font-size: 18px;
 		margin: 0px;
 	}
+
+	/* Products section */
 	article {
 		width: 22%;
+	}
+	article:hover {
+		box-shadow: 0px 5px 10px rgb(100, 100, 100);
+	}
+	.productDescription {
+		display: none;
+	}
+	article:hover .productDescription {
+		display: initial;
+	}
+
+	article:hover .delivery-icon {
+		transform: rotate(360deg);
+	}
+
+	/* Footer */
+	.footer-container {
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer-item {
+		width: 30%;
+	}
+	.footer-item:hover .icon-footer {
+		color: var(--light-blue);
 	}
 }
