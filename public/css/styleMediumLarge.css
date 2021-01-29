@@ -103,7 +103,9 @@
 	.nav-item:not(.icon-search):hover{
 		color:var(--light-blue);
 	}
-	
+	.nav-item a:hover i{
+		color:var(--light-blue);
+	}
 	.byline {
 		max-width: none;
 		font-size: 18px;

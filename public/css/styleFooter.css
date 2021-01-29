@@ -20,7 +20,7 @@ footer {
 }
 
 .icon-footer {
-	color: var(--dark-blue);
+	color: var(--light-blue-consigna);
 	margin-bottom: 5px;
 	font-size: 3em;
 }
