@@ -1,19 +1,27 @@
 {
-  "name": "mercadoLiebre",
+  "name": "mercadoliebre",
   "version": "1.0.0",
-  "description": "",
+  "description": "The first published version of the mercadoLiebre deliverable",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Simon Huxter",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuxter/mercadoLiebre-sdh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shuxter/mercadoLiebre-sdh/issues"
+  },
+  "homepage": "https://github.com/shuxter/mercadoLiebre-sdh#readme"
 }
