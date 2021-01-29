@@ -9,7 +9,7 @@ const staticFolder = path.resolve(__dirname, "./public");
 app.use(express.static(staticFolder));
 
 //Routes
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
 	console.log(`The server is running on ${PORT}`);
 });
 
