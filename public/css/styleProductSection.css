@@ -1,0 +1,84 @@
+/* ----------- Products Section ------------ */
+article {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 98%;
+	background-color: white;
+	margin-bottom: 10px;
+	padding: 15px;
+	border-top: solid 1px var(--light-grey);
+}
+.section-header {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	font-size: 24px;
+	color: var(--dark-grey);
+}
+.section-product {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	background-color: var(--light-grey);
+}
+article {
+	width: 100%;
+}
+
+.card-description {
+	border-top: solid 1px var(--light-grey);
+	position: relative;
+	padding: 10px;
+}
+.card-info {
+	margin-top: 5px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+.img-card {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+}
+.delivery-icon {
+	display: box;
+	padding: 5px;
+	border-radius: 50%;
+	background-color: white;
+	border: solid 1px var(--green);
+	position: absolute;
+	top: -15px;
+	right: 25px;
+	transition: transform 2s;
+}
+.fa-truck {
+	color: var(--green);
+	font-size: 14px;
+	padding: 0px;
+}
+.price {
+	font-size: 18px;
+	color: var(--dark-grey);
+}
+.discount {
+	color: var(--green);
+	font-weight: 300;
+	font-size: 16px;
+	flex-grow: 1;
+	padding-left: 10px;
+}
+.productDescription {
+	color: var(--dark-grey);
+	font-weight: 300;
+	font-size: 16px;
+	padding-top: 10px;
+}

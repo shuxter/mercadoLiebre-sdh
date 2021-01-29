@@ -1,0 +1,42 @@
+/*---------- Footer------------ */
+footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	padding: 10px;
+}
+.footer-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.footer-item {
+	width: 100%;
+}
+
+.icon-footer {
+	color: var(--dark-blue);
+	margin-bottom: 5px;
+	font-size: 3em;
+}
+.footer-sub-heading {
+	color: var(--dark-grey);
+	margin: auto;
+}
+
+.footer-description {
+	color: var(--dark-grey);
+	margin: auto;
+	margin-bottom: 30px;
+}
+
+.footer-copyright {
+	width: 100%;
+	text-align: left;
+	color: var(--dark-grey);
+}

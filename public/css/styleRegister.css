@@ -1,0 +1,77 @@
+/* Register */
+.form-container {
+	padding: 16px;
+	max-width: 500px;
+}
+.form-body {
+	display: flex;
+	justify-content: center;
+}
+.register-form {
+	background-color: white;
+	margin-bottom: 15px;
+}
+.image-container {
+	text-align: center;
+	margin-top: 24px;
+}
+.user-image {
+	width: 40%;
+    border-radius: 50%;
+    transition:2s;
+}
+
+.form-item {
+	margin: 10px 0px;
+	width: 100%;
+}
+.form-item input {
+	border: none;
+	border-radius: 5px;
+	padding: 3px 5px;
+	color: var(--dark-grey);
+}
+#name,
+#dateOfBirth,
+#username,
+#user-email,
+#user-address,
+#password,
+#confirmPassword{
+	width: 100%;
+    display: block;
+	padding: 12px 20px;
+	margin: 5px 0;
+	background-color: white;
+	border: solid 1px var(--light-blue);
+	border-radius: 5px;
+}
+#user-profile>label{
+    padding:0px 15px;
+}
+#user-interests>p{
+padding:4px 15px;
+}
+#user-photo{
+    padding:15px;
+}
+	
+.btn-group-register {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+button:hover {
+	opacity: 0.8;
+	background-color: #0022aa;
+}
+.btn-primary-register, .btn-secondary-register {
+	background-color: var(--light-blue);
+	color: white;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+}
+.btn-secondary-register {
+	background-color: var(--dark-grey);
+}

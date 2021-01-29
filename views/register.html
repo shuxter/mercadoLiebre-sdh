@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/styleHeader.css">
+        <link rel="stylesheet" href="/css/styleFooter.css">
+        <link rel="stylesheet" href="/css/styleRegister.css">
+        <link rel="stylesheet" href="/css/styleMediumLarge.css" media="(min-width: 768px)">
 
         <title>
             <h1>Mercado Liebre</h1>
@@ -74,39 +78,47 @@
                     <!-- IF the field validations fail then i want to highlight the field in red and give an explanation as to why it has failed next to the field or in a popup when i click on the field.-->
                     <div class="form-container">
                         <div class="form-item">
-                            <label for="nameAndSurname"><input type="text" name="nombreYApellido" id="name"
-                                    placeholder="Nombre y Apellido"></label>
+                            <label for="nameAndSurname">
+                                <h4>¿Como es tu nombre?</h4>
+                                <input type="text" name="nombreYApellido" id="name"
+                                    placeholder="Nombre y Apellido" required></label>
                         </div>
                         <div class="form-item">
-                            <label for="username"><input type="text" name="usuario" id="username"
-                                    placeholder="Nombre de Usuario"></label>
+                            <label for="username">
+                                <h4>¿Como te gustaria ser conocido en la plataforma?</h4>
+                                <input type="text" name="usuario" id="username"
+                                    placeholder="@....." required></label>
                         </div>
                         <div class="form-item">
-                            <label for="email"><input type="email" name="email" id="user-email"
-                                    placeholder="E-mail"></label>
+                            <label for="email">
+                                <h4>¿Donde podemos mandar tus notificaciones?</h4>
+                                <input type="email" name="email" id="user-email"
+                                    placeholder="email" required></label>
                         </div>
                         <div class="form-item" id="date-of-birth">
-                            <h4>Fecha de Nacimiento</h4>
+                            <h4>¿Cuando podemos desearte un feliz cumpleaños?</h4>
                             <input type="date" name="DOB" id="dateOfBirth" placeholder="mm/dd/yyy">
                         </div>
                         <div class="form-item">
-                            <label for="address"><input type="text" name="address" id="user-address"
-                                    placeholder="Domicilio"></label>
+                            <label for="address">
+                                <h4>¿Donde podemos mandar tus pedidos?</h4>
+                                <input type="text" name="address" id="user-address"
+                                    placeholder="Domicilio"required></label>
                         </div>
                         <div class="form-item" id="user-profile">
-                            <h4>Perfil del usuario</h4>
+                            <h4>Que queres hacer en la plataforma?</h4>
 
-                            <input type="radio" name="userProfile" id="comprador" value="comprador">
-                            <label for="comprador">Comprador</label>
+                            <label for="comprador"><input type="radio" name="userProfile" id="comprador" value="comprador">
+                            Comprar</label>
 
-                            <input type="radio" name="userProfile" id="vendedor" value="vendedor">
-                            <label for="vendedor">Vendedor</label>
+                            <label for="vendedor"><input type="radio" name="userProfile" id="vendedor" value="vendedor">
+                            Vender</label>
 
                         </div>
                         <div class="form-item" id="user-interests">
-                            <h4>Intereses</h4>
+                            <h4>¿Que son tus intereses?</h4>
                             <p>
-                                <label for="electro"></label><input type="checkbox" id="electro" name="electro"
+                                <label for="electro"><input type="checkbox" id="electro" name="electro"
                                     value="Electro">
                                 Electro</label>
                             </p>
@@ -125,16 +137,15 @@
                             </p>
                         </div>
                         <div class="form-item" id="user-photo-container">
-                            <h4>Foto de Perfil</h4>
-                            <label for="user-photo">Subir una foto para tu perfil</label>
-                            <input type="file" name="user-photo" id="user-photo">
+                            <label for="user-photo"><h4>Eligir una foto tuy@ que te gusta, y subirla</h4>                            
+                            <input type="file" name="user-photo" id="user-photo"></label>
                         </div>
                         <div class="form-item">
-                            <input type="password" name="password" id="password" placeholder="Contraseña">
+                            <input type="password" name="password" id="password" placeholder="Contraseña" required>
                         </div>
                         <div class="form-item">
                             <input type="password" name="confirmPassword" id="confirmPassword"
-                                placeholder="Confirmar Contraseña">
+                                placeholder="Confirmar Contraseña" required>
                         </div>
                     </div>
                     <div class="btn-group-register">
@@ -154,14 +165,16 @@
                         en puntos de pago. ¡Y
                         siempre es seguro!</p>
                 </div>
-                <div class="footer-item"><i class="fas fa-gift icon-footer"></i>
+                <div class="footer-item">
+                    <i class="fas fa-gift icon-footer"></i>
                     <h4 class="footer-sub-heading">Envió gratis desde $ 2.500</h4>
                     <p class="footer-description">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
                         miles
                         de productos. Es un
                         beneficio de Mercado Puntos.</p>
                 </div>
-                <div class="footer-item"><i class="fas fa-user-shield icon-footer"></i>
+                <div class="footer-item">
+                    <i class="fas fa-user-shield icon-footer"></i>
                     <h4 class="footer-sub-heading">Seguridad, de principio a fin</h4>
                     <p class="footer-description">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas
                         hacer, porque estás siempre
