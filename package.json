@@ -1,24 +1,22 @@
 {
   "name": "mercadoliebre",
+  "description": "This is my deliverable fo rhte DH Full Stack course Module 4 - Mercado Liebre The focus was learnign HTML and CSS and adapting it to the style of an ecommerce whilst also coding from wireframes and design briefs.",
   "version": "1.0.0",
-  "description": "The first published version of the mercadoLiebre deliverable",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "Simon Huxter",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shuxter/mercadoLiebre-sdh.git"
   },
+  "author": "Simon Huxter",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/shuxter/mercadoLiebre-sdh/issues"
   },
   "homepage": "https://github.com/shuxter/mercadoLiebre-sdh#readme",
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
