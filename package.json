@@ -19,5 +19,6 @@
   "bugs": {
     "url": "https://github.com/shuxter/mercadoLiebre-sdh/issues"
   },
-  "homepage": "https://github.com/shuxter/mercadoLiebre-sdh#readme"
+  "homepage": "https://github.com/shuxter/mercadoLiebre-sdh#readme",
+  "devDependencies": {}
 }
