@@ -42,7 +42,7 @@
 	.nav-list-container-right {
 		display: flex;
 		width: 50%;
-		margin-top: 10px;
+		margin-top: 0px;
 	}
 	.nav-list-container-right {
 		justify-content: flex-end;
@@ -83,7 +83,8 @@
 		max-width: 280px;
 	}
 	.nav-search-bar {
-		max-width: 300px;
+		margin-left:20px;
+		max-width: 500px;
 	}
 	.search-bar,
 	.icon-search {
@@ -91,7 +92,7 @@
 	}
 	
 	.nav-bar {
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	.nav-item {
 		margin: 0px 10px;
